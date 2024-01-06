@@ -24,3 +24,10 @@ Create C Project
 |-- LICENSE
 |-- Makefile
 |-- README.md
+```
+## How to Use
+
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/ZouariOmar/Create_C_Project.git
+
