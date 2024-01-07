@@ -2,7 +2,7 @@
 // dd/mm/yyyy
 // Name Of Project Or Name The File
                     /* INCLUDE PROTOTYPE DECLARATION PART */
-#include "../include/inc.h"
+#include "../inc/inc.h"
                     /* FUNCTIONS PROTOTYPE DEV PART */
 /*
 func...
