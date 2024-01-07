@@ -11,14 +11,19 @@ This template provides a basic structure for starting a new C project. It includ
 ```plaintext
 Create C Project
 |-- .vscode
-|-- docs (optional)
-|-- Github
+|   |-- launch.json
+|   |-- tasks.json
+|-- doc
+|   |-- note.txt
+|-- github
 |   |-- .gitignore
-|-- include
+|-- inc
 |   |-- inc.h
-|-- Library
+|-- lib
 |   |-- lib.c
-|-- Source
+|-- pkg
+|   |-- install_C_Package.cmd
+|-- src
 |   |-- main.c
 |-- Create_C_Project.code-workspace
 |-- LICENSE
