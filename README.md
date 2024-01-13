@@ -29,6 +29,8 @@ Create C Project
 |   |-- lib.c
 |-- pkg
 |   |-- install_C_Package.cmd
+|-- res
+|   |-- img.ico
 |-- src
 |   |-- main.c
 |   |-- Makefile
