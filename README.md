@@ -10,9 +10,15 @@ This template provides a basic structure for starting a new C project. It includ
 
 ```plaintext
 Create C Project
-|-- .vscode
-|   |-- launch.json
-|   |-- tasks.json
+|-- bin
+|   |-- debug
+|   |-- release
+|   |-- test
+|-- conf
+|   |-- test
+|-- |-- .vscode
+|   |   |-- launch.json
+|   |   |-- tasks.json
 |-- doc
 |   |-- note.txt
 |-- github
@@ -25,9 +31,9 @@ Create C Project
 |   |-- install_C_Package.cmd
 |-- src
 |   |-- main.c
+|   |-- Makefile
 |-- Create_C_Project.code-workspace
 |-- LICENSE
-|-- Makefile
 |-- README.md
 ```
 ## How to Use
