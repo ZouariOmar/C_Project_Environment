@@ -10,33 +10,40 @@ This template provides a basic structure for starting a new C project. It includ
 
 ```plaintext
 Create C Project
-|-- bin
-|   |-- debug
-|   |-- release
-|   |-- test
-|-- conf
-|   |-- test
-|-- |-- .vscode
-|   |   |-- launch.json
-|   |   |-- tasks.json
-|-- doc
-|   |-- note.txt
-|-- github
-|   |-- .gitignore
-|-- inc
-|   |-- inc.h
-|-- lib
-|   |-- lib.c
-|-- pkg
-|   |-- install_C_Package.cmd
-|-- res
-|   |-- img.ico
-|-- src
-|   |-- main.c
-|   |-- Makefile
-|-- Create_C_Project.code-workspace
-|-- LICENSE
-|-- README.md
+│   Create_C_Project.code-workspace
+│   LICENSE
+│   README.md
+│
+├───bin
+│   ├───debug
+│   ├───release
+│   └───test
+├───conf
+│   ├───.vscode
+│   │       launch.json
+│   │       tasks.json
+│   │
+│   └───github
+│           .gitignore
+│
+├───doc
+│       notes.txt
+│
+├───inc
+│       inc.h
+│
+├───lib
+│       lib.c
+│
+├───pkg
+│       install_C_Package.cmd
+│
+├───res
+│       img.ico
+│
+└───src
+│       main.c
+│       Makefile
 ```
 ## How to Use
 
