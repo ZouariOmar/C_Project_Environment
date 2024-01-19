@@ -45,9 +45,10 @@ Create C Project
 │       main.c
 │       Makefile
 ```
+
 ## How to Use
 
 1. **Clone the Repository:**
+
    ```bash
    git clone https://github.com/ZouariOmar/Create_C_Project.git
-
