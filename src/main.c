@@ -6,6 +6,6 @@
                     /* MAIN() INT FUNCTION DEV PART */
 int main(int argc, char const *argv[]) {
     // principal vars declaration part
-    printf("Hello World\n");
+    printf("Hello World !\n");
     return 0;
 }

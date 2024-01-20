@@ -4,6 +4,8 @@
 #ifndef __INC_H__
 #define __INC_H__
                     /* INCLUDE PROTOTYPE DECLARATION PART */
+#include <stdio.h>
+#include <stdlib.h>
 // #include <nameOfLib.h>   || #include "nameOfLib.h"
 // #include <nameOfLib.c>   || #include "nameOfLib.c"
                     /* COLORS PROTOTYPE DECLARATION PART */

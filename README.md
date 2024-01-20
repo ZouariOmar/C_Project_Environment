@@ -13,6 +13,7 @@ Create C Project
 │   Create_C_Project.code-workspace
 │   LICENSE
 │   README.md
+|   Makefile
 │
 ├───bin
 │   ├───debug
@@ -43,7 +44,6 @@ Create C Project
 │
 └───src
 │       main.c
-│       Makefile
 ```
 
 ## How to Use
