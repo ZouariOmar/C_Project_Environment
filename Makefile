@@ -33,7 +33,8 @@ run: app
 
 # move option ::: make move <APP_NAME=app_name>
 move:
-	mv $(APP).exe $(RELEASE_DIR)
+	@echo Moving "$(APP_NAME).exe" from "$(OUTPUT_DIR)" to "$(RELEASE_DIR)"
+	@move "bin\debug\$(APP_NAME).exe" "bin\release"
 	@echo Moving complete! & pause
 
 # clean option ::: make clean <APP_NAME=app_name>
