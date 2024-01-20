@@ -1,5 +1,6 @@
-# 'make'        build executable file 'app'
-# 'make clean'  removes all .o and executable files
+# by_zouari_omar_full_stack_c/c++_dev
+# dd/mm/yyyy
+# Name Of Project Or Name The File
 
 # Define the C compiler to use
 CC = gcc
@@ -8,42 +9,42 @@ CC = gcc
 SRC_DIR = src/main.c
 
 # Define the output directory
-OUTPUT_DIR = bin/debug
-
-# Define the release directory
-RELEASE_DIR = bin/release
+OUT_DIR = bin/debug
 
 # Choose the name of the executable
-APP_NAME = app
+NAME = app
 
 # Full path to the output executable
-APP = $(OUTPUT_DIR)/$(APP_NAME)
+APP = $(OUT_DIR)/$(NAME)
 
+# 'make' build executable file 'app'
 # app > run
 app:
 	@$(CC) $(SRC_DIR) -o $(APP)
-	@echo Executing 'app' build complete! & pause
-	@echo . & echo . & echo .
+	@echo --- Executing 'app' build complete ! --- & pause
+	@echo.  & echo.
 
-# run cmd option ::: make run <APP_NAME=app_name>
+# run cmd option ::: make run <NAME=app_name>
 run: app
 	@./$(APP)
-	@echo . & echo . & echo .
-	@echo Executing 'run: app' complete! & pause
+	@echo.  & echo.
+	@echo --- Executing 'run: app' complete ! --- & pause
 
-# move option ::: make move <APP_NAME=app_name>
+# move option ::: make move <NAME=app_name>
 move:
-	@echo Moving "$(APP_NAME).exe" from "$(OUTPUT_DIR)" to "$(RELEASE_DIR)"
-	@move "bin\debug\$(APP_NAME).exe" "bin\release"
-	@echo Moving complete! & pause
+	@echo --- Moving "$(NAME).exe" from "$(OUT_DIR)" to "bin\release" ---
+	@move "bin\debug\$(NAME).exe" "bin\release"
+	@echo --- Moving complete ! --- & pause
 
-# clean option ::: make clean <APP_NAME=app_name>
+# clean option ::: make clean <NAME=app_name> <OUT_DIR=path>
 clean:
-	@cd $(OUTPUT_DIR) & del "$(APP_NAME).exe"
-	@echo Cleanup complete! & pause
+	@echo --- Deleting "$(NAME).exe" from "$(OUT_DIR)" ---
+	@cd $(OUT_DIR) & del "$(NAME).exe"
+	@echo --- Cleanup complete ! --- & pause
 
-# cleanAll option ::: make cleanAll <APP_NAME=app_name>
+# cleanAll option ::: make cleanAll <OUT_DIR=path>
 cleanAll:
-	@cd $(OUTPUT_DIR) & dir
-	@del "$(OUTPUT_DIR)\*"
-	@echo Cleanup complete! & pause
+	@echo --- Deleting all files in "$(OUT_DIR)" ---
+	@cd $(OUT_DIR) & dir
+	@del "$(OUT_DIR)\*"
+	@echo --- All_Cleanup complete ! --- & pause
