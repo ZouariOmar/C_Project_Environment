@@ -9,16 +9,22 @@ This template provides a basic structure for starting a new C project. It includ
 ## Project Structure
 
 ```plaintext
-Create C Project
+Create_C_Project
 │   Create_C_Project.code-workspace
 │   LICENSE
+│   Makefile
 │   README.md
-|   Makefile
 │
 ├───bin
 │   ├───debug
+│   │       test.exe
+│   │
 │   ├───release
+│   │       test.exe
+│   │
 │   └───test
+│           test.exe
+│
 ├───conf
 │   ├───.vscode
 │   │       launch.json
@@ -39,11 +45,8 @@ Create C Project
 ├───pkg
 │       install_C_Package.cmd
 │
-├───res
-│       img.ico
-│
 └───src
-│       main.c
+        main.c
 ```
 
 ## How to Use
