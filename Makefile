@@ -5,6 +5,9 @@
 # Define the C compiler to use
 CC = gcc
 
+# Specify any additional flags for the C compiler
+CFLAGS = -I inc -L lib -l mingw32 -l SDL2main -l SDL2
+
 # Define the source file
 SRC_DIR = src/main.c
 
@@ -17,18 +20,24 @@ NAME = app
 # Full path to the output executable
 APP = $(OUT_DIR)/$(NAME)
 
-# 'make' build executable file 'app'
+#					-- 'make' build executable file 'app' --
+# run cmd option ::: make run <NAME=app_name>
+run: app
+	@./$(APP)
+	@echo.  & echo.
+	@echo --- Executing 'run: app' complete ! --- & pause
+
 # app > run
 app:
 	@$(CC) $(SRC_DIR) -o $(APP)
 	@echo --- Executing 'app' build complete ! --- & pause
 	@echo.  & echo.
 
-# run cmd option ::: make run <NAME=app_name>
-run: app
-	@./$(APP)
+# sdl > run
+sdl:
+	@$(CC) $(SRC_DIR) -o $(OUT_DIR) $(CFLAGS)
+	@echo --- Executing 'app' build complete ! --- & pause
 	@echo.  & echo.
-	@echo --- Executing 'run: app' complete ! --- & pause
 
 # move option ::: make move <NAME=app_name>
 move:
