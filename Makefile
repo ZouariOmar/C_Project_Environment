@@ -35,7 +35,7 @@ app:
 
 # sdl > run
 sdl:
-	@$(CC) $(SRC_DIR) -o $(OUT_DIR) $(CFLAGS)
+	@$(CC) $(SRC_DIR) -o $(APP) $(CFLAGS)
 	@echo --- Executing 'app' build complete ! --- & pause
 	@echo.  & echo.
 
