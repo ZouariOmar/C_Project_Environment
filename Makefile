@@ -21,39 +21,43 @@ NAME = app
 APP = $(OUT_DIR)/$(NAME)
 
 #					-- 'make' build executable file 'app' --
-# run cmd option ::: make run <NAME=app_name>
+# run cmd option :: make run <NAME=app_name>
 run: app
+	@echo 
 	@./$(APP)
-	@echo.  & echo.
-	@echo --- Executing 'run: app' complete ! --- & pause
+	@echo 
+	@echo --- Executing 'run: app' complete ! ---
+	@echo -n "Press Enter to continue..." & read -r
 
 # app > run
 app:
 	@$(CC) $(SRC_DIR) -o $(APP)
-	@echo --- Executing 'app' build complete ! --- & pause
-	@echo.  & echo.
+	@echo --- Executing 'app' build complete ! ---
+	@echo -n "Press Enter to continue..." & read -r
 
 # sdl > run
 sdl:
 	@$(CC) $(SRC_DIR) -o $(APP) $(CFLAGS)
-	@echo --- Executing 'app' build complete ! --- & pause
-	@echo.  & echo.
+	@echo --- Executing 'app' build complete ! ---
+	@echo -n "Press Enter to continue..." & read -r
 
-# move option ::: make move <NAME=app_name>
+# move option :: make move <NAME=app_name>
 move:
 	@echo --- Moving "$(NAME).exe" from "$(OUT_DIR)" to "bin\release" ---
-	@move "bin\debug\$(NAME).exe" "bin\release"
-	@echo --- Moving complete ! --- & pause
+	@mv "bin\debug\$(NAME).exe" "bin\release"
+	@echo --- Moving complete ! ---
+	@echo -n "Press Enter to continue..." & read -r
 
-# clean option ::: make clean <NAME=app_name> <OUT_DIR=path>
+# clean option :: make clean <NAME=app_name> <OUT_DIR=path>
 clean:
 	@echo --- Deleting "$(NAME).exe" from "$(OUT_DIR)" ---
-	@cd $(OUT_DIR) & del "$(NAME).exe"
-	@echo --- Cleanup complete ! --- & pause
+	@rm "$(APP).exe"
+	@echo --- Cleanup complete ! ---
+	@echo -n "Press Enter to continue..." & read -r
 
-# cleanAll option ::: make cleanAll <OUT_DIR=path>
-cleanAll:
+# cleanDir option ::: make cleanDir <OUT_DIR=path>
+cleanDir:
 	@echo --- Deleting all files in "$(OUT_DIR)" ---
-	@cd $(OUT_DIR) & dir
-	@del "$(OUT_DIR)\*"
-	@echo --- All_Cleanup complete ! --- & pause
+	@rm -r "$(OUT_DIR)"
+	@echo --- All_Cleanup complete ! ---
+	@echo -n "Press Enter to continue..." & read -r
