@@ -6,7 +6,8 @@
 CC = gcc
 
 # Specify any additional flags for the C compiler
-CFLAGS = -I inc -L lib -l mingw32 -l SDL2main -l SDL2
+CFLAG1 = -Iinc -Llib -lmingw32 -lSDLmain -lSDL
+CFLAG2 = -I inc -Llib -lmingw32 -lSDL2main -lSDL2
 
 # Define the source file
 SRC_DIR = src/main.c
@@ -35,9 +36,15 @@ app:
 	@echo --- Executing 'app' build complete ! ---
 	@echo -n "Press Enter to continue..." & read -r
 
-# sdl > run
-sdl:
-	@$(CC) $(SRC_DIR) -o $(APP) $(CFLAGS)
+# sdl1 > run
+sdl1:
+	@$(CC) $(SRC_DIR) -o $(APP) $(CFLAG1)
+	@echo --- Executing 'app' build complete ! ---
+	@echo -n "Press Enter to continue..." & read -r
+
+# sdl2 > run
+sdl2:
+	@$(CC) $(SRC_DIR) -o $(APP) $(CFLAG2)
 	@echo --- Executing 'app' build complete ! ---
 	@echo -n "Press Enter to continue..." & read -r
 
