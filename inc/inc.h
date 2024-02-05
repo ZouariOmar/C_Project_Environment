@@ -1,6 +1,6 @@
 // by_zouari_omar_full_stack_c/c++_dev
 // dd/mm/yyyy
-// Name Of Project Or Name The File
+// Name Of Project :: inc.h
 #ifndef __INC_H__
 #define __INC_H__
                     /* INCLUDE PROTOTYPE DECLARATION PART */

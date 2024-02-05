@@ -1,12 +1,12 @@
 # by_zouari_omar_full_stack_c/c++_dev
 # dd/mm/yyyy
-# Name Of Project Or Name The File
+# Name Of Project :: Makefile
 
 # Define the C compiler to use
 CC = gcc
 
-# Specify any additional flags for the C compiler
-CFLAGS = -Wall -Wextra -std=c99 -lm -lSDL -g
+# Specify any additional flags for the C compiler (for SDL1.2)
+CFLAGS = -Wall -Wextra -std=c99 -lm -lSDL -lSDL_image -lSDL_gfx -lSDL_ttf -lSDL_mixer -g
 
 # Define the source files
 SRC_DIR = src/main.c
