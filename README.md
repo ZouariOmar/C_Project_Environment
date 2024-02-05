@@ -17,10 +17,13 @@ Create_C_Project
 │
 ├───bin
 │   ├───debug
-│   │       test.exe
+│   │       app.exe
+│   │
+│   ├───obj
+│   │       obj.o
 │   │
 │   ├───release
-│   │       test.exe
+│   │       release.exe
 │   │
 │   └───test
 │           test.exe
@@ -34,7 +37,13 @@ Create_C_Project
 │           .gitignore
 │
 ├───doc
-│       notes.txt
+│   │   notes.txt
+│   │
+│   └───pdf
+│           NONE.pdf
+│
+├───download
+│       down.exe
 │
 ├───inc
 │       inc.h
@@ -44,6 +53,7 @@ Create_C_Project
 │
 ├───pkg
 │       install_C_Package.cmd
+│       install_C_Package.sh
 │
 └───src
         main.c
