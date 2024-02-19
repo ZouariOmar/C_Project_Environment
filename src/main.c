@@ -2,7 +2,7 @@
 // dd/mm/yyyy
 // Name Of Project :: main.c
                     /* INCLUDE PROTOTYPE DECLARATION PART */
-#include "../lib/lib.c"
+#include "lib.c"
                     /* MAIN() INT FUNCTION DEV PART */
 int main(int argc, char const *argv[]) {
     // principal vars declaration part

@@ -48,15 +48,13 @@ Create_C_Project
 ├───inc
 │       inc.h
 │
-├───lib
-│       lib.c
-│
 ├───pkg
 │       install_C_Package.cmd
 │       install_C_Package.sh
 │
 └───src
         main.c
+        lib.c
 ```
 
 ## How to Use
