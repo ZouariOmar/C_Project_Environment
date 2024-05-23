@@ -1,7 +1,9 @@
 /* -----------------------------------------------
-* @author:    by_zouari_omar_full_stack_java_dev
-* @date:      mm/dd/yyyy
-? @file_name: main.c
+* @team:   NONE
+* @author: @ZouariOmar
+* @IDE:    @vsc
+* @update: mm/dd/yy
+? @file:   main.c
 ----------------------------------------------- */
 
 //? ------------------------------ INCLUDE PROTOTYPE DECLARATION PART ------------------------------

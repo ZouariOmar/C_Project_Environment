@@ -53,8 +53,8 @@ Create_C_Project
 │       install_C_Package.sh
 │
 └───src
-        main.c
         lib.c
+        main.c
 ```
 
 ## How to Use

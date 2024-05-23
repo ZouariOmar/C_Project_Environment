@@ -1,7 +1,9 @@
 /* -----------------------------------------------
-* @author:    by_zouari_omar_full_stack_java_dev
-* @date:      mm/dd/yyyy
-? @file_name: inc.h
+* @team:   NONE
+* @author: @ZouariOmar
+* @IDE:    @vsc
+* @update: mm/dd/yy
+? @file:   inc.h
 ----------------------------------------------- */
 
 #ifndef __INC_H__
