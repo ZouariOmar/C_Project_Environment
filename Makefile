@@ -1,10 +1,11 @@
-# -----------------------------------------------
-#* @team:   NONE
-#* @author: @ZouariOmar
-#* @IDE:    @vsc
-#* @update: mm/dd/yy
-#? @file:   makefile
-# -----------------------------------------------
+# --------------------------------------------------------
+# ? @file      main.c
+# ? @author    @ZouariOmar (zouariomar20@gmail.com)
+# ? @brief     IDE__VSC
+# ? @version   0.1
+# ? @date      2024-06-06
+# ? @copyright Copyright (c) 2024
+# --------------------------------------------------------
 
 #* Define the C compiler to use
 CC = gcc
@@ -13,7 +14,7 @@ CC = gcc
 CFLAGS = -Wall -Wextra -std=c99 -lm -lSDL -lSDL_image -lSDL_gfx -lSDL_ttf -lSDL_mixer -g
 
 #* Define the source files
-SRC_DIR = src/main.c
+SRC_DIR = project/src/main.c
 
 #* Define the output directory
 OUT_DIR = bin/debug
