@@ -11,41 +11,43 @@ This template provides a basic structure for starting a new C project. It includ
 ```plaintext
 .Run_C_Project
 ├── bin
-│   ├── debug
-│   │   └── app.exe
-│   ├── obj
-│   │   └── obj.o
-│   ├── release
-│   │   └── release.exe
-│   └── test
-│       └── test.exe
-├── conf
-│   └── github
+│   ├── build
+│   ├── debug
+│   │   ├── app
+│   │   └── app.exe
+│   ├── obj
+│   │   ├── main.o
+│   │   └── obj.o
+│   ├── release
+│   │   └── release.exe
+│   └── test
+│       └── test.exe
 ├── doc
-│   ├── notes.txt
-│   └── pdf
-│       └── NONE.pdf
+│   ├── notes.txt
+│   └── pdf
+│       └── NONE.pdf
 ├── download
-│   └── down.exe
+│   └── down.exe
+├── github
 ├── LICENSE
 ├── Makefile
 ├── pkg
-│   ├── install_C_Package.cmd
-│   └── install_C_Package.sh
+│   ├── install_C_Package.cmd
+│   └── install_C_Package.sh
 ├── project
-│   ├── doc
-│   │   └── NONE
-│   ├── inc
-│   │   └── inc.h
-│   ├── res
-│   │   └── NONE
-│   └── src
-│       ├── lib.c
-│       └── main.c
+│   ├── doc
+│   │   └── NONE
+│   ├── inc
+│   │   └── inc.h
+│   ├── res
+│   │   └── NONE
+│   └── src
+│       ├── lib.c
+│       └── main.c
 ├── README.md
 └── Run_C_Project.code-workspace
 
-17 directories, 18 files
+17 directories, 20 files
 ```
 
 ## How to Use (**Installation**)
