@@ -15,8 +15,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 /*
-#include <nameOfLib.h>   || #include "nameOfLib.h"
 #include <nameOfLib.c>   || #include "nameOfLib.c"
+#include <nameOfLib.h>   || #include "nameOfLib.h"
 */
 
 //? ------------------------------ COLORS PROTOTYPE DECLARATION PART ------------------------------

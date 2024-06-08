@@ -11,10 +11,9 @@
 #include "lib.c"
 
 //? --------------------------------- MAIN() INT FUNCTION DEV PART ---------------------------------
-int main(int argc, char const *argv[])
-{
-    //* principal vars declaration part
+int main(int argc, char const *argv[]) {
+  //* principal vars declaration part
 
-    printf("Hello World !\n");
-    return 0;
+  printf("Hello World !\n");
+  return 0;
 }
