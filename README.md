@@ -12,16 +12,60 @@ This template provides a basic structure for starting a new C project. It includ
 .Run_C_Project
 ├── bin
 │   ├── build
+│   │   ├── CMakeCache.txt
+│   │   ├── CMakeFiles
+│   │   │   ├── 3.29.3
+│   │   │   │   ├── CMakeCCompiler.cmake
+│   │   │   │   ├── CMakeCXXCompiler.cmake
+│   │   │   │   ├── CMakeDetermineCompilerABI_C.bin
+│   │   │   │   ├── CMakeDetermineCompilerABI_CXX.bin
+│   │   │   │   ├── CMakeSystem.cmake
+│   │   │   │   ├── CompilerIdC
+│   │   │   │   │   ├── a.out
+│   │   │   │   │   ├── CMakeCCompilerId.c
+│   │   │   │   │   └── tmp
+│   │   │   │   └── CompilerIdCXX
+│   │   │   │       ├── a.out
+│   │   │   │       ├── CMakeCXXCompilerId.cpp
+│   │   │   │       └── tmp
+│   │   │   ├── app.dir
+│   │   │   │   ├── build.make
+│   │   │   │   ├── cmake_clean.cmake
+│   │   │   │   ├── compiler_depend.internal
+│   │   │   │   ├── compiler_depend.make
+│   │   │   │   ├── compiler_depend.ts
+│   │   │   │   ├── DependInfo.cmake
+│   │   │   │   ├── depend.make
+│   │   │   │   ├── flags.make
+│   │   │   │   ├── home
+│   │   │   │   │   └── zouari_omar
+│   │   │   │   │       └── Documents
+│   │   │   │   │           └── Daily
+│   │   │   │   │               └── Projects
+│   │   │   │   │                   └── Crun
+│   │   │   │   │                       └── Run_C_Project
+│   │   │   │   │                           └── project
+│   │   │   │   │                               └── src
+│   │   │   │   ├── link.txt
+│   │   │   │   └── progress.make
+│   │   │   ├── cmake.check_cache
+│   │   │   ├── CMakeConfigureLog.yaml
+│   │   │   ├── CMakeDirectoryInformation.cmake
+│   │   │   ├── CMakeScratch
+│   │   │   ├── Makefile2
+│   │   │   ├── Makefile.cmake
+│   │   │   ├── pkgRedirects
+│   │   │   ├── progress.marks
+│   │   │   └── TargetDirectories.txt
+│   │   ├── cmake_install.cmake
+│   │   └── Makefile
 │   ├── debug
 │   │   ├── app
 │   │   └── app.exe
-│   ├── obj
-│   │   ├── main.o
-│   │   └── obj.o
 │   ├── release
-│   │   └── release.exe
+│   │   └── release
 │   └── test
-│       └── test.exe
+│       └── test
 ├── doc
 │   ├── notes.txt
 │   └── pdf
@@ -30,8 +74,8 @@ This template provides a basic structure for starting a new C project. It includ
 │   └── down.exe
 ├── github
 ├── LICENSE
-├── Makefile
 ├── pkg
+│   ├── CMakeLists.txt
 │   ├── install_C_Package.cmd
 │   └── install_C_Package.sh
 ├── project
@@ -41,13 +85,14 @@ This template provides a basic structure for starting a new C project. It includ
 │   │   └── inc.h
 │   ├── res
 │   │   └── NONE
+│   ├── run.sh
 │   └── src
 │       ├── lib.c
 │       └── main.c
 ├── README.md
 └── Run_C_Project.code-workspace
 
-17 directories, 20 files
+34 directories, 48 files
 ```
 
 ## How to Use (**Installation**)
