@@ -1,101 +1,53 @@
-# Run C Project
+# Normal C Project Environment
 
-**A simple template for starting a new C project.**
+**A simple template for starting a complex C project.**
 
 ## Overview
 
-This template provides a basic structure for starting a new C project. It includes essential directories and files to help you organize your code and easily get started with development.
+This template provides a basic structure for starting a complex C project. It includes essential directories and files to help you organize your code and easily get started with development using the **CMake** to generate a build system including the **Makefile/build.ninja**.
 
 ## Project Structure
 
 ```plaintext
-.Run_C_Project
+.Normal C Project Environment
 ├── bin
 │   ├── build
-│   │   ├── CMakeCache.txt
-│   │   ├── CMakeFiles
-│   │   │   ├── 3.29.3
-│   │   │   │   ├── CMakeCCompiler.cmake
-│   │   │   │   ├── CMakeCXXCompiler.cmake
-│   │   │   │   ├── CMakeDetermineCompilerABI_C.bin
-│   │   │   │   ├── CMakeDetermineCompilerABI_CXX.bin
-│   │   │   │   ├── CMakeSystem.cmake
-│   │   │   │   ├── CompilerIdC
-│   │   │   │   │   ├── a.out
-│   │   │   │   │   ├── CMakeCCompilerId.c
-│   │   │   │   │   └── tmp
-│   │   │   │   └── CompilerIdCXX
-│   │   │   │       ├── a.out
-│   │   │   │       ├── CMakeCXXCompilerId.cpp
-│   │   │   │       └── tmp
-│   │   │   ├── app.dir
-│   │   │   │   ├── build.make
-│   │   │   │   ├── cmake_clean.cmake
-│   │   │   │   ├── compiler_depend.internal
-│   │   │   │   ├── compiler_depend.make
-│   │   │   │   ├── compiler_depend.ts
-│   │   │   │   ├── DependInfo.cmake
-│   │   │   │   ├── depend.make
-│   │   │   │   ├── flags.make
-│   │   │   │   ├── home
-│   │   │   │   │   └── zouari_omar
-│   │   │   │   │       └── Documents
-│   │   │   │   │           └── Daily
-│   │   │   │   │               └── Projects
-│   │   │   │   │                   └── Crun
-│   │   │   │   │                       └── Run_C_Project
-│   │   │   │   │                           └── project
-│   │   │   │   │                               └── src
-│   │   │   │   ├── link.txt
-│   │   │   │   └── progress.make
-│   │   │   ├── cmake.check_cache
-│   │   │   ├── CMakeConfigureLog.yaml
-│   │   │   ├── CMakeDirectoryInformation.cmake
-│   │   │   ├── CMakeScratch
-│   │   │   ├── Makefile2
-│   │   │   ├── Makefile.cmake
-│   │   │   ├── pkgRedirects
-│   │   │   ├── progress.marks
-│   │   │   └── TargetDirectories.txt
-│   │   ├── cmake_install.cmake
-│   │   └── Makefile
+│   │   └── build
 │   ├── debug
-│   │   ├── app
-│   │   └── app.exe
+│   │   └── debug
 │   ├── release
 │   │   └── release
 │   └── test
 │       └── test
 ├── doc
-│   ├── notes.txt
-│   └── pdf
-│       └── NONE.pdf
+│   ├── pdf
+│   │   └── NONE.pdf
+│   └── TODO.md
 ├── download
-│   └── down.exe
-├── github
+│   └── download
 ├── LICENSE
+├── Normal C Project Environment.code-workspace
 ├── pkg
-│   ├── CMakeLists.txt
-│   ├── install_C_Package.cmd
-│   └── install_C_Package.sh
+│   ├── C-Cpp_pkg.cmd
+│   ├── C-Cpp_pkg.sh
+│   └── CMakeLists.txt
 ├── project
 │   ├── doc
-│   │   └── NONE
+│   │   └── doc
 │   ├── inc
 │   │   └── inc.h
 │   ├── res
-│   │   └── NONE
-│   ├── run.sh
+│   │   └── res
 │   └── src
 │       ├── lib.c
 │       └── main.c
 ├── README.md
-└── Run_C_Project.code-workspace
+└── run.sh
 
-34 directories, 48 files
+15 directories, 19 files
 ```
 
-## How to Use (**Installation**)
+## How to Use
 
 To lunch the project on your Linux system, follow these steps:
 
@@ -108,32 +60,24 @@ To lunch the project on your Linux system, follow these steps:
 2. **Navigate to the Directory**:
 
     ```sh
-    cd Run_C_Project
+    cd 'Normal C Project Environment'
     ```
 
-3. **Build the Application**:
+3. **Make the script executable**:
 
     ```sh
-    make
+    chmod +x run.sh
     ```
 
-4. **Run the Application**:
+4. **Build & Run the Application**:
 
     ```sh
-    ./bin/debug/app
+    ./run.sh <COMMAND>
     ```
 
-## Contributing
+- **COMMAND: make/ninja**
 
-We welcome contributions from the community. If you wish to contribute, please follow these steps:
-
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature-branch`).
-3. Commit your changes (`git commit -am 'Add new feature'`).
-4. Push to the branch (`git push origin feature-branch`).
-5. Create a new Pull Request.
-
-Please make sure your code adheres to our coding standards and includes appropriate tests.
+- **Note: if you are using VSC, you can't run your program using the "Code Runner" extension**
 
 ## License
 

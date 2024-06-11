@@ -8,12 +8,14 @@
  ***************************************************/
 
 //? ------------------------------ INCLUDE PROTOTYPE DECLARATION PART ------------------------------
-#include "lib.c"
+#include "../inc/inc.h"
 
 //? --------------------------------- MAIN() INT FUNCTION DEV PART ---------------------------------
 int main(int argc, char const *argv[]) {
   //* principal vars declaration part
+  // her...
 
   printf("Hello World !\n");
+
   return 0;
 }
