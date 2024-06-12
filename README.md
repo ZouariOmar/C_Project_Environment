@@ -1,15 +1,15 @@
-# Normal C Project Environment
+# C Project Environment
 
-**A simple template for starting a complex C project.**
+**A simple template for starting a C project.**
 
 ## Overview
 
-This template provides a basic structure for starting a complex C project. It includes essential directories and files to help you organize your code and easily get started with development using the **CMake** to generate a build system including the **Makefile/build.ninja**.
+This template provides a basic structure for starting a C project. It includes essential directories and files to help you organize your code and easily get started with development using the **CMake** to generate a build system including the **Makefile/build.ninja**.
 
 ## Project Structure
 
 ```plaintext
-.Normal C Project Environment
+.C_Project_Environment
 ├── bin
 │   ├── build
 │   │   └── build
@@ -26,7 +26,7 @@ This template provides a basic structure for starting a complex C project. It in
 ├── download
 │   └── download
 ├── LICENSE
-├── Normal C Project Environment.code-workspace
+├── C_Project_Environment.code-workspace
 ├── pkg
 │   ├── C-Cpp_pkg.cmd
 │   ├── C-Cpp_pkg.sh
